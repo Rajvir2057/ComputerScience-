@@ -29,7 +29,7 @@ changeDue = changeDue % PENNIES_PER_DOLLAR
 quaters= changeDue // PENNIES_PER_QUATER
 
 #Print change due
-print("Dollar coins : %6d" % changeDue)
+print("Dollar coins : %6d" % changeDue) # the percent was used to display an answer will 6 digit space for the answer in changedue.
 print("Quaters : %6d" % changeDue)
 
 ## Rajvir kaur 816815
