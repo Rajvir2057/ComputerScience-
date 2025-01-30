@@ -1,5 +1,5 @@
 #practicing if using userinput and managing time
-
+#Kaur Rajvir 816815
 #user data
 Userdata = input("Enter your username.: ")
 Userdata2= int(input("Enter your age.: "))
@@ -32,4 +32,6 @@ hoursalone = timediff // 60
 minsalone = timediff % 60
 
 print("The time gap is: ",hoursalone,"hours ",minsalone,"mins")
+print("Thank you bye", Userdata)
+
 
