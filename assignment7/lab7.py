@@ -30,6 +30,8 @@ counts= [
 #Print table header
 print("        Country      Gold  Silver  Bronze    Total")
 
+grand_total = 0 
+
 #Print countries, counts, and row totals.
 for i in range(Countries):
     total = 0  
@@ -40,5 +42,11 @@ for i in range(Countries):
         print("%8d" %counts[i][j], end="")
         total = total + counts[i][j]
 
+
+    grand_total = grand_total + total
+    gold_total = gold_total + counts[j][0]
+
     #Display the row total and print a new line.
     print("%8d" % total)
+print("-" * 50)
+print("   Grand Total : ", "%30d"%grand_total)
