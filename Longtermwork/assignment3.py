@@ -132,3 +132,6 @@ while not game_over:
     elif did_computer_win:
         print("Computer won")
         game_over = True
+    elif did_computer_win and did_player_win:
+        print("its a tie")
+        game_over = True
