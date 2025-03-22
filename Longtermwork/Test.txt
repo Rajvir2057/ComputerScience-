@@ -1,0 +1,131 @@
+Who developed Python Programming Language?
+Wick van Rossum
+Rasmus Lerdorf
+Guido van Rossum
+Niene Stom
+c5
+Which type of Programming does Python support?
+object-oriented programming
+structured programming
+functional programming
+all of the mentioned
+d5
+Is Python case sensitive when dealing with identifiers?
+no
+yes
+machine dependent
+none of the mentioned
+b5
+Which of the following is the correct extension of the Python file?
+python
+pl
+.py
+.p
+c5
+Is Python code compiled or interpreted?
+Python code is both compiled and interpreted
+Python code is neither compiled nor interpreted
+Python code is only compiled
+Python code is only interpreted
+a5
+All keywords in Python are in _________
+Capitalized
+lower case
+UPPER CASE
+None of the mentioned
+d5
+What will be the value of the following Python expression?4 + 3 % 5
+7
+2
+4
+1
+a5
+Which of the following is used to define a block of code in Python language?
+Indentation
+Key
+Brackets
+All of the mentioned
+a5
+Which keyword is used for function in Python language?
+Function
+def
+Fun
+Define
+b5
+Which of the following character is used to give single-line comments in Python?
+//
+#
+!
+/*
+b5
+Which of the following functions can help us to find the version of python that we are currently working on?
+sys.version(1)
+sys.version(0)
+sys.version()
+sys.version
+d5
+Python supports the creation of anonymous functions at runtime, using a construct called __________
+pi
+anonymous
+lambda
+none of the mentioned
+c5
+What is the order of precedence in python?
+Exponential, Parentheses, Multiplication, Division, Addition, Subtraction
+Exponential, Parentheses, Division, Multiplication, Addition, Subtraction
+Parentheses, Exponential, Multiplication, Addition, Division, Subtraction
+Parentheses, Exponential, Multiplication, Division, Addition, Subtraction
+d5
+What will be the output of the following Python code snippet if x=1? x<<2
+4
+2
+1
+8
+a5
+What does pip stand for python?
+Pip Installs Python
+Pip Installs Packages
+Preferred Installer Program
+All of the mentioned
+c5
+Which of the following is true for variable names in Python?
+underscore and ampersand are the only two special characters allowed
+unlimited length
+all private members must have leading and trailing underscores
+none of the mentioned
+b5
+Which of the following is the truncation division operator in Python?
+|
+//
+/
+%
+b5
+Which of the following functions is a built-in function in python?
+factorial()
+print()
+seed()
+sqrt()
+b5
+Which of the following is not a core data type in Python programming?
+Tuples
+Lists
+Class
+Dictionary
+c5
+Which of these is the definition for packages in Python?
+A set of main modules
+A folder of python modules
+A number of files containing Python definitions and statements
+A set of programs making use of Python modules
+b5
+What will be the output of the following Python function?len(["hello",2, 4, 6])
+Error
+6
+4
+3
+What is the order of namespaces in which Python looks for an identifier?
+Python first searches the built-in namespace, then the global namespace and finally the local namespace
+Python first searches the built-in namespace, then the local namespace and finally the global namespace
+Python first searches the local namespace, then the global namespace and finally the built-in namespace
+Python first searches the global namespace, then the local namespace and finally the built-in namespace
+c5
