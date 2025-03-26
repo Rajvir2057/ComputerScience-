@@ -22,6 +22,12 @@ pl
 .py
 .p
 c5
+Is Python code compiled or interpreted?
+Python code is both compiled and interpreted
+Python code is neither compiled nor interpreted
+Python code is only compiled
+Python code is only interpreted
+a5
 All keywords in Python are in _________
 Capitalized
 lower case
@@ -117,4 +123,10 @@ Error
 6
 4
 3
+c5
+What is the order of namespaces in which Python looks for an identifier?
+Python first searches the built-in namespace, then the global namespace and finally the local namespace
+Python first searches the built-in namespace, then the local namespace and finally the global namespace
+Python first searches the local namespace, then the global namespace and finally the built-in namespace
+Python first searches the global namespace, then the local namespace and finally the built-in namespace
 c5
