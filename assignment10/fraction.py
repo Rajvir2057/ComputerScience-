@@ -19,7 +19,7 @@ class Fraction:
             else:
                 sign = 1
 
-            # Reduce to smallest form.
+            # Reduce to smallest form using the Euclidean algorithm.
             a = abs(numerator)
             b = abs(denominator)
             while a % b != 0:
@@ -30,58 +30,51 @@ class Fraction:
 
             self._numerator = abs(numerator) // b * sign
             self._denominator = abs(denominator) // b
-def __add__(self, rhsValue):
-    num = (self._numerator * rhsValue._denominator +
-           self._denominator * rhsValue._numerator)
-    den = self._denominator * rhsValue._denominator
-    return Fraction(num, den)
 
-## Subtracts a fraction from this fraction.
-# @param rhsValue the right-hand side fraction
-# @return a new Fraction object resulting from the subtraction
-#
-def __sub__(self, rhsValue):
-    num = (self._numerator * rhsValue._denominator -
-           self._denominator * rhsValue._numerator)
-    den = self._denominator * rhsValue._denominator
-    return Fraction(num, den)
+    ## Adds two fractions.
+    def __add__(self, rhsValue):
+        num = (self._numerator * rhsValue._denominator +
+               self._denominator * rhsValue._numerator)
+        den = self._denominator * rhsValue._denominator
+        return Fraction(num, den)
 
-def __eq__(self, rhsValue):
-    return (self._numerator == rhsValue._numerator and
-            self._denominator == rhsValue._denominator)
+    ## Subtracts a fraction from this fraction.
+    def __sub__(self, rhsValue):
+        num = (self._numerator * rhsValue._denominator -
+               self._denominator * rhsValue._numerator)
+        den = self._denominator * rhsValue._denominator
+        return Fraction(num, den)
 
-def __lt__(self, rhsValue):
-    return (self._numerator * rhsValue._denominator <
-            self._denominator * rhsValue._numerator)
+    ## Determines if two fractions are equal.
+    def __eq__(self, rhsValue):
+        return (self._numerator == rhsValue._numerator and
+                self._denominator == rhsValue._denominator)
 
-## Determines if this fraction is not equal to another fraction.
-# @param rhsValue the right-hand side fraction
-# @return True if the fractions are not equal
-def __ne__(self, rhsValue):
-    return not self == rhsValue
+    ## Determines if this fraction is less than another fraction.
+    def __lt__(self, rhsValue):
+        return (self._numerator * rhsValue._denominator <
+                self._denominator * rhsValue._numerator)
 
-## Determines if this fraction is less than or equal to another fraction.
-# @param rhsValue the right-hand side fraction
-# @return True if this fraction is less than or equal to the other
-def __le__(self, rhsValue):
-    return not rhsValue < self
+    ## Determines if this fraction is not equal to another fraction.
+    def __ne__(self, rhsValue):
+        return not self == rhsValue
 
-## Determines if this fraction is greater than another fraction.
-# @param rhsValue the right-hand side fraction
-# @return True if this fraction is greater than the other
-def __gt__(self, rhsValue):
-    return rhsValue < self
+    ## Determines if this fraction is less than or equal to another fraction.
+    def __le__(self, rhsValue):
+        return not rhsValue < self
 
-## Determines if this fraction is greater than or equal to another fraction.
-# @param rhsValue the right-hand side fraction
-# @return True if this fraction is greater than or equal to the other
-def __ge__(self, rhsValue):
-    return not self < rhsValue
+    ## Determines if this fraction is greater than another fraction.
+    def __gt__(self, rhsValue):
+        return rhsValue < self
 
-def __float__(self):
-    return self._numerator / self._denominator
+    ## Determines if this fraction is greater than or equal to another fraction.
+    def __ge__(self, rhsValue):
+        return not self < rhsValue
 
-## Gets a string representation of the fraction.
-# @return a string in the format #/#
-def __repr__(self):
-    return str(self._numerator) + "/" + str(self._denominator)
+    ## Converts the fraction to a float.
+    def __float__(self):
+        return self._numerator / self._denominator
+
+    ## Gets a string representation of the fraction.
+    def __repr__(self):
+        return str(self._numerator) + "/" + str(self._denominator)
